@@ -32,6 +32,9 @@ header {
 .option-navigation li {
     display: inline;
     margin: 0 10px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .option-navigation a {
