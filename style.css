@@ -12,13 +12,13 @@ header, nav, section {
 
 header {
     background: #333;
-    color: #fff;
+    color: whitesmoke;
     text-align: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
-@media(width<768px){
-    header{
+@media (max-width: 768px) {
+    header {
         font-size: 10px;
     }
 }
@@ -27,13 +27,6 @@ header {
     list-style: none;
     padding: 0;
     text-align: center;
-}
-
-@media(width<768px){
-    .option-navigation{
-        display: flex;
-        flex-direction: column;
-    }
 }
 
 .option-navigation li {
@@ -56,13 +49,61 @@ section {
     padding: 20px;
     border-radius: 5px;
 }
-.image{
-    margin-left: 600px;
+
+.image-container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
 }
-.name{
+
+.image {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.name {
     text-align: center;
 }
 
 
+@media (max-width: 768px) {
+    header {
+        font-size: 1.2em;
+    }
+    .option-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .option-navigation li {
+        margin: 5px 0;
+    }
+    section {
+        margin: 10px;
+    }
+    .image {
+        max-width: 100%; 
+    }
+    .name {
+        font-size: 1.2em;
+    }
+}
 
-
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .option-navigation li {
+        margin: 3px 0;
+    }
+    section {
+        margin: 5px;
+    }
+    .image {
+        max-width: 100px; 
+    }
+    .name {
+        font-size: 1em;
+    }
+}
