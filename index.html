@@ -4,21 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech Goals</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <h1 data-testid="header-title">My 2-Years Tech Goals</h1>
+      <p data-testid="currenTimeUTC" id="utc-time-display">Current UTC Time:</p>
+      <p data-testid="currentDay" id="day-display">Current Day:</p>
     </header>
+    <img
+      data-testid="slackProfilePicture"
+      src="https://ca.slack-edge.com/T07466B189M-U07ACFRRBBK-500670e2af50-72"
+      alt="image"
+      class="image"
+    />
+    <p data-testid="slackName" class="name">Shakirat Taiwo</p>
     <nav>
       <ul data-testid="navigation" class="option-navigation">
-        <li><a href="#introduction" data-testid="nav-introduction">Introduction</a></li>
+        <li>
+          <a href="#introduction" data-testid="nav-introduction"
+            >Introduction</a
+          >
+        </li>
         <li><a href="#goals" data-testid="nav-goals">Goals</a></li>
         <li><a href="#timeline" data-testid="nav-timeline">Timeline</a></li>
         <li><a href="#skills" data-testid="nav-skills">Skills</a></li>
         <li><a href="#projects" data-testid="nav-projects">Projects</a></li>
         <li><a href="#resources" data-testid="nav-resources">Resources</a></li>
         <li><a href="#contact" data-testid="nav-contact">Contact</a></li>
+        <li><a href="http://keyword.dog/" data-testid="keywordLink">Keyword.dog</a></li>
+        <li><a href="http://scrapeanyweb.site/" data-testid="scrapeanywebLink">Scrapeanyweb.site</a></li>
       </ul>
     </nav>
     <section id="introduction" data-testid="section-introduction">
@@ -29,7 +44,15 @@
         computer. I had the opportunity to work with a team of developers by
         testing the app they developed for quality assurance. Since then, I've
         been captivated by the endless possibilities that coding offers and have
-        eagerly immersed myself in learning as much as I can.
+        eagerly immersed myself in learning as much as I can.I'm particularly
+        excited about web development and have been actively exploring ways to
+        deepen my understanding in this area. While my experience may be
+        limited, I've already had the opportunity to work on some exciting
+        projects. These projects have not only allowed me to apply my skills in
+        a real-world context but have also fueled my passion for development,
+        which is why i joined
+        <span data-testid="hngLink"><a href="http://hng.tech/learn">HNG</a></span> internship for
+        personal improvement.
       </p>
     </section>
     <section id="goals" data-testid="section-goals">
@@ -60,33 +83,39 @@
       </ul>
     </section>
     <section id="skills" data-testid="section-skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>next js</li>
-            <li>typeScript</li>
-        </ul>
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>next js</li>
+        <li>typeScript</li>
+      </ul>
     </section>
     <section id="projects" data-testid="section-projects">
-        <h2>Projects</h2>
-           <ul>
-            <li>Open-source contribution</li>
-            <li>build frontend mentor projects</li>
-            <li>E-commerce projects</li>
-           </ul>
+      <h2>Projects</h2>
+      <ul>
+        <li>Open-source contribution</li>
+        <li>build frontend mentor projects</li>
+        <li>E-commerce projects</li>
+      </ul>
     </section>
     <section id="resources" data-testid="section-resources">
-        <h2>Resources</h2>
-         <ul>
-            <li>Freecodecamp</li>
-            <li>Frontend mentor</li>
-            <li>Youtube</li>
-         </ul>
+      <h2>Resources</h2>
+      <ul>
+        <li>Freecodecamp</li>
+        <li>Frontend mentor</li>
+        <li>Youtube</li>
+      </ul>
     </section>
     <section id="contact" data-testid="section-contact">
-        <h2>Contact</h2>
-        <p>You can contact me on <a href="mailto:shakirattaiwo6@gmail.com" data-testid="contact-email">shakirattaiwo6@gmail.com</a></p>
+      <h2>Contact</h2>
+      <p>
+        You can contact me on
+        <a href="mailto:shakirattaiwo6@gmail.com" data-testid="slackEmail"
+          >shakirattaiwo6@gmail.com</a
+        >
+      </p>
     </section>
+    <script src="./app.js"></script>
   </body>
 </html>
